@@ -5,4 +5,28 @@
     <string name="close">close</string>
     <string name="calendar_here">Calendar Here</string>
     <string name="hello">Hello!</string>
+
+    <string name="task_title">Task Title</string>
+    <string name="difficulty">Difficulty</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+
+    <string name="not_recurring">Not Recurring</string>
+    <string name="recurring">Recurring</string>
+
+    <string name="prioritize">Prioritize</string>
+    <string name="do_not_prioritize">Do Not Prioritize</string>
+
+    <string name="all_week">All Week</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="sunday">Sunday</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="add_another">Add Another</string>
+    <string name="save">Save</string>
 </resources>
