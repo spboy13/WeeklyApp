@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">WeeklyApp</string>
+    <!-- Content Main String Resources-->
     <string name="open">open</string>
     <string name="close">close</string>
+    <string name="calendar_here">Calendar Here</string>
+    <string name="hello">Hello!</string>
 </resources>
