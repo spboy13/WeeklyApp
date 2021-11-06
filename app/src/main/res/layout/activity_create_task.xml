@@ -40,11 +40,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="8dp"
+                    android:importantForAccessibility="no"
                     android:importantForAutofill="no"
                     android:inputType="textCapWords"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/textTask_title"
-                    android:importantForAccessibility="no"/>
+                    app:layout_constraintTop_toBottomOf="@id/textTask_title" />
 
             </com.google.android.material.card.MaterialCardView>
 
@@ -60,10 +60,10 @@
                 app:layout_constraintTop_toBottomOf="@+id/cardTask_title" />
 
             <com.google.android.material.card.MaterialCardView
-                app:cardElevation="10dp"
                 android:id="@+id/cardDifficulty_options"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:cardElevation="10dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textDifficulty">
 
@@ -108,12 +108,12 @@
                 app:layout_constraintGuide_percent="0.5" />
 
             <com.google.android.material.card.MaterialCardView
-                app:cardElevation="10dp"
                 android:id="@+id/rgRecurring"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="4dp"
+                app:cardElevation="10dp"
                 app:layout_constraintEnd_toStartOf="@+id/guideline1"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/cardDifficulty_options">
@@ -141,11 +141,11 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
-                app:cardElevation="10dp"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
                 android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                app:cardElevation="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/guideline1"
                 app:layout_constraintTop_toBottomOf="@id/cardDifficulty_options">
@@ -153,8 +153,8 @@
                 <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:checkedButton="@id/no_priority_option"
-                    android:layout_marginEnd="8dp">
+                    android:layout_marginEnd="8dp"
+                    android:checkedButton="@id/no_priority_option">
 
                     <RadioButton
                         android:id="@+id/no_priority_option"
@@ -173,11 +173,11 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.card.MaterialCardView
-                app:cardElevation="10dp"
                 android:id="@+id/cardDay"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                app:cardElevation="10dp"
                 app:layout_constraintTop_toBottomOf="@id/rgRecurring">
 
                 <LinearLayout
@@ -186,9 +186,11 @@
                     android:orientation="vertical">
 
                     <CheckBox
+                        android:id="@+id/cbAll_week"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/all_week"/>
+                        android:onClick="onCheckboxClicked"
+                        android:text="@string/all_week" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -197,40 +199,53 @@
                         android:orientation="vertical">
 
                         <CheckBox
+                            android:id="@+id/cbMon"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/monday"/>
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/monday" />
 
                         <CheckBox
+                            android:id="@+id/cbTue"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/tuesday"/>
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/tuesday" />
 
                         <CheckBox
+                            android:id="@+id/cbWed"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/wednesday"/>
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/wednesday" />
 
                         <CheckBox
+                            android:id="@+id/cbThur"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/thursday"/>
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/thursday" />
 
                         <CheckBox
+                            android:id="@+id/cbFri"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/friday"/>
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/friday" />
 
                         <CheckBox
+                            android:id="@+id/cbSat"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Saturday"
-                            tools:ignore="HardcodedText" />
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/saturday" />
 
                         <CheckBox
+                            android:id="@+id/cbSun"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/sunday"/>
+                            android:onClick="onCheckboxClicked"
+                            android:text="@string/sunday" />
 
                     </LinearLayout>
 
@@ -238,22 +253,14 @@
 
             </com.google.android.material.card.MaterialCardView>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/cardDay"
-                android:gravity="center_horizontal">
-            </LinearLayout>
-
         </androidx.constraintlayout.widget.ConstraintLayout>
+
     </ScrollView>
 
     <FrameLayout
         android:id="@+id/fl_wrapper"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+        android:layout_height="match_parent" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bot_nav"

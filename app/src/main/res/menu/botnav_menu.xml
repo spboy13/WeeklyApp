@@ -2,15 +2,15 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/cancelButton"
+        android:id="@+id/btnCancel"
         android:icon="@android:drawable/ic_menu_close_clear_cancel"
-        android:title="Cancel" />
+        android:title="@string/bot_nav_cancel" />
     <item
-        android:id="@+id/addAnother"
+        android:id="@+id/btnAdd_another"
         android:icon="@android:drawable/ic_menu_add"
-        android:title="Add Another" />
+        android:title="@string/bot_nav_add_another" />
     <item
-        android:id="@+id/saveButton"
+        android:id="@+id/btnSave"
         android:icon="@android:drawable/ic_menu_save"
-        android:title="Save" />
+        android:title="@string/bot_nav_save" />
 </menu>
