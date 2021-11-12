@@ -2,11 +2,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/addTaskMenu"
+        android:id="@+id/add_task_action"
         android:icon="@android:drawable/ic_menu_add"
-        android:title="Add Task" />
+        android:title="@string/nav_add_task" />
+
     <item
-        android:id="@+id/setupMenu"
+        android:id="@+id/setup_action"
         android:icon="@android:drawable/ic_menu_preferences"
-        android:title="Setup" />
+        android:title="@string/nav_setup" />
+
 </menu>

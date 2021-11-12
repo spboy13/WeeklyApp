@@ -24,14 +24,24 @@
     <string name="wednesday">Wednesday</string>
     <string name="thursday">Thursday</string>
     <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
     <string name="sunday">Sunday</string>
 
     <string name="cancel">Cancel</string>
     <string name="add_another">Add Another</string>
     <string name="save">Save</string>
 
-    <string name="bot_nav_cancel">Cancel</string>
-    <string name="bot_nav_add_another">Add Another</string>
-    <string name="bot_nav_save">Save</string>
-    <string name="saturday">Saturday</string>
+    <string name="botnav_cancel">Cancel</string>
+    <string name="botnav_add_another">Add Another</string>
+    <string name="botnav_save">Save</string>
+    <string name="nav_add_task">Add Task</string>
+    <string name="nav_setup">Setup</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_all_tasks">All Tasks</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="none">None</string>
+
+
 </resources>

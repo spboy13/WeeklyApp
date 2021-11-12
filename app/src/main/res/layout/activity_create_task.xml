@@ -44,7 +44,8 @@
                     android:importantForAutofill="no"
                     android:inputType="textCapWords"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/textTask_title" />
+                    app:layout_constraintTop_toBottomOf="@id/textTask_title"
+                    tools:ignore="LabelFor" />
 
             </com.google.android.material.card.MaterialCardView>
 
@@ -68,7 +69,7 @@
                 app:layout_constraintTop_toBottomOf="@id/textDifficulty">
 
                 <RadioGroup
-                    android:id="@+id/difficulty_options"
+                    android:id="@+id/rgDifficulty_options"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:checkedButton="@id/easy_option"
@@ -108,7 +109,7 @@
                 app:layout_constraintGuide_percent="0.5" />
 
             <com.google.android.material.card.MaterialCardView
-                android:id="@+id/rgRecurring"
+                android:id="@+id/cardRecurring"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -119,6 +120,7 @@
                 app:layout_constraintTop_toBottomOf="@id/cardDifficulty_options">
 
                 <RadioGroup
+                    android:id="@+id/rgRecurring_options"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
@@ -151,6 +153,7 @@
                 app:layout_constraintTop_toBottomOf="@id/cardDifficulty_options">
 
                 <RadioGroup
+                    android:id="@+id/rgPriority_options"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
@@ -178,7 +181,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 app:cardElevation="10dp"
-                app:layout_constraintTop_toBottomOf="@id/rgRecurring">
+                app:layout_constraintTop_toBottomOf="@id/cardRecurring">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -189,7 +192,6 @@
                         android:id="@+id/cbAll_week"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:onClick="onCheckboxClicked"
                         android:text="@string/all_week" />
 
                     <LinearLayout
@@ -202,49 +204,42 @@
                             android:id="@+id/cbMon"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onClick="onCheckboxClicked"
                             android:text="@string/monday" />
 
                         <CheckBox
                             android:id="@+id/cbTue"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onClick="onCheckboxClicked"
                             android:text="@string/tuesday" />
 
                         <CheckBox
                             android:id="@+id/cbWed"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onClick="onCheckboxClicked"
                             android:text="@string/wednesday" />
 
                         <CheckBox
                             android:id="@+id/cbThur"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onClick="onCheckboxClicked"
                             android:text="@string/thursday" />
 
                         <CheckBox
                             android:id="@+id/cbFri"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onClick="onCheckboxClicked"
                             android:text="@string/friday" />
 
                         <CheckBox
                             android:id="@+id/cbSat"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onClick="onCheckboxClicked"
                             android:text="@string/saturday" />
 
                         <CheckBox
                             android:id="@+id/cbSun"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:onClick="onCheckboxClicked"
                             android:text="@string/sunday" />
 
                     </LinearLayout>
